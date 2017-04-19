@@ -91,7 +91,6 @@ $.each(nodes, function(i, node){
 	row.hasNeighbour = row.neighbourCnt > 0;
 	row.hostname = ni.hostname;
 	row.hasLocation = ni.location != null;
-	row.node_id = ni.node_id;
 	
 	if(row.hasLocation) {
 		row.locLat = ni.location.latitude;
@@ -428,7 +427,7 @@ $('#grid').w2grid({
 		}, 300);
 	},
 	onDblClick: function(event) {
-		window.open(nodelistconfig.mapPath + '/#!v:m;n:'+records[event.recid].node_id, '_blank');
+		window.open(nodelistconfig.mapPath + '/#!v:m;n:'+records[event.recid].id, '_blank');
 	},
 });
 
