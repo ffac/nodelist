@@ -2,7 +2,7 @@
 
 window.nodelistconfig = {
 	dataPath: 'https://data.aachen.freifunk.net/',
-	mapPath: 'https://map.aachen.freifunk.net/',
+	mapPath: 'https://map.aachen.freifunk.net',
 	siteName: 'Freifunk Regio Aachen',
 	downstreamSource: 'https://github.com/ffac/nodelist/tree/deploy',
 
